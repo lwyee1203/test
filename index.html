@@ -5,7 +5,6 @@
 	<title>高雄市公共藝術資訊</title>
 	<link rel="stylesheet" href="all.css">
 	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.24/vue.min.js"></script>
 	<script src="PublicArt.json"></script>
 </head>
 <body>
@@ -21,43 +20,16 @@
 	<div class="slider-img">
 	<div class="slides">
 			<ul id="slider"> </ul>
-
 		<a href="#" class="prev"><img src="images/left.png" alt=""></a>
 		<a href="#" class="next"><img src="images/right.png" alt=""></a>
     </div>
     </div>
-
-	<div id="areaSelect">
+	
 	<p id="choose">請選擇要搜尋的區域：</p>
-	 <select v-model="area">
-                    <option>- - - 請選擇地區 - - -</option>
-                    <option v-for="area in areas">
-                        {{area}}
-                    </option>
-                </select>
-             <ul  class="show">
-                    <template v-for="show in shows">
-                        <template v-if="area=='- - - 請選擇地區 - - -'">
-                            <li class="all">
-                            <h2>{{show.PublicArt_Name}}</h2>
-                            <img src="{{show.PublicArt_Image}}" height="250px" width="250px">
-                            </li>
-                        </template>
-                        <template v-if="show.area==area">
-                        <li class="showSome">　
-                        <h2>{{show.PublicArt_Name}}</h2>
-                        <img src="{{show.PublicArt_Image}}" height="250px" width="250px"> 
-                        <p>{{show.PublicArt_PublicArt_Place}}</p>
-                         
-                          <br/>
-                          
-                        </li>
-                        </template>
-                    </template>
-                </ul>
-
-	<!-- <select v-model="location">
- 	<option value="null" selected="">- - - 選擇地區 - - -</option>
+	<form action="post">
+	<select id = "area">
+ 	<option value="null">- - - 選擇地區 - - -</option>
+ 	<option value="all">- - - 全部地區 - - -</option>
 　	<option value="楠梓區">楠梓區</option>
 　	<option value="左營區">左營區</option>
 　	<option value="鼓山區">鼓山區</option>
@@ -96,10 +68,13 @@
 	<option value="茂林區">茂林區</option>
 	<option value="桃園區">桃園區</option>
 	<option value="那瑪夏區">那瑪夏區</option>
-	</select>  -->
+	</select>  
+	<input type="button" value="搜尋地區" class="submit">
+	<input type="button" value="回到首頁" class="frontPage" onclick="javascript:location.href='index.html'">
+	</form>
 
+	<div class="areaSelect">
 	</div>
-
     </div>
     <div class="footer">
     	<p>This is Footer</p>

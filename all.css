@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-/*start here*/
+/*-----------------------------首頁-----------------------------*/
 body{
 	background-color: #E0E0E0;
 }
@@ -93,7 +93,7 @@ body{
 
 #header h1{
 	text-align: center;	
-	font-size: 72px;
+	font-size: 70px;
 	font-family: 微軟正黑體;
 	font-weight: bold;
 	padding-top: 50px;
@@ -102,9 +102,9 @@ body{
 
 #header img{
 	margin: 0 auto;
-	max-width: 130px;
+	max-width: 110px;
 	max-height: auto;
-	margin-left: 120px;
+	margin-left: 150px;
 }
 
 select{
@@ -116,34 +116,91 @@ select{
 	padding-right: 25px;
 }
 
-input{
-	font-family: 微軟正黑體;
-	font-size: 16px;
-	margin-left: 5px;
-	padding: 8px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-#areaSelect{
+.areaSelect{
+	display: none;
 	float: left;
-	margin-top: 20px;
 	margin-bottom: 10px;
-	width: 610px;
+	width: 1300px;
+	height: 420px;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 #choose{
 	float: left;
 	margin-top: 20px;
 	margin-left: 5px;
-	padding-left: 60px;
+	margin-bottom: 20px;
+	padding-left: 20px;
 	font-family: 微軟正黑體;
 	font-size: 18px;
 }
 
+.submit{
+	padding: 8px;
+	font-family: 微軟正黑體;
+	font-size: 16px;
+}
 
+.frontPage{
+	display: none;
+	padding: 8px;
+	margin-left: 5px;
+	font-family: 微軟正黑體;
+	font-size: 16px;
+}
+
+.show ul{
+	margin-left: 10px;
+}
+
+.show li{
+	float: left;
+	margin: 8px;
+	padding: 10px;
+	padding-bottom: 15px;
+	border: 1px solid black;
+	text-align: center;
+	width: 280px;
+	height: 300px;	
+}
+
+#line{
+	border-bottom: 1px solid black;
+	margin: 10px auto; 
+}
+
+.result_img{
+	max-width: 260px;
+	max-height: 200px;
+}
+
+.result_name {
+	font-size: 18px;
+	font-family: 微軟正黑體;
+	text-align: center;	
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.result_place{
+	font-size: 16px;
+	font-family: 微軟正黑體;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.unfind{
+	max-width: 30%;
+	padding-top: 100px;
+	padding-left: 160px;
+}
+
+/*-----------------------------首頁-----------------------------*/
 
 /* -----------------------------圖片輪播css----------------------------- */
+
 .slider ul, .slider li {
 	margin: 0;
 	padding: 0;
@@ -156,16 +213,17 @@ a img {
 
 .slider-img{
 	margin: 0 auto;
+	margin-top: 20px;
 	margin-bottom: 10px;
-	width: 650px;	/* 框架圖片的寬 */
-	height: 438px;	/* 框架圖片的高 */
+	width: 750px;	/* 框架圖片的寬 */
+	height: 400px;	/* 框架圖片的高 */
 	position: relative;
-	float: left;
-	
+	float: left;	
 }
 
 .slider-img img{
-	max-width: 65%;
+	max-width: 80%;
+	padding-left: 180px;
 }
 
 .slider-img a.prev, .slider-img a.next {
@@ -186,7 +244,7 @@ a img {
 .slider-img .next {
 	background: url('images/right.png') no-repeat;
 	background-size:contain;
-	right: 70px;
+	right: -15px;
 }
 
 
@@ -194,9 +252,8 @@ a img {
 	overflow: hidden;
 	position: relative;
 	display: block;
-	top: 30px;
-	left: 5px;
-	width: 700px;	/* 框架中間區塊的寬 */
+	top: 30px;	
+	width: 720px;	/* 框架中間區塊的寬 */
 	height: 100%;	/* 框架中間區塊的高 */
 }
 
@@ -205,9 +262,10 @@ a img {
 	width: 9990px;
 	height: 100%;
 }
+
 .slides li {
 	text-align: center;
-	width: 680px;
+	width: 650px;
 	height: 100%;
 	float: left;
 }
