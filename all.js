@@ -5441,7 +5441,6 @@ var data =
   }
 ]
 //json 檔
-
 		var area = document.getElementById('area').value;
 		var result=[];
 		for(i=0; i<data.length; i++){
@@ -5470,8 +5469,7 @@ $('.areaSelect').html('');
 
 //首頁抓圖片資料
 str='';
-	for(i=0; i<data.length; i++){
-		
+	for(i=0; i<data.length; i++){		
 		str+='<li><img src='+ data[i].PublicArt_Image+'></li>'
   
 }
