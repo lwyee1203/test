@@ -121,9 +121,6 @@ select{
 	float: left;
 	margin-bottom: 10px;
 	width: 1300px;
-	height: 420px;
-	overflow-x: hidden;
-	overflow-y: scroll;
 }
 
 #choose{
