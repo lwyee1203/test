@@ -5452,16 +5452,16 @@ var data =
 		}
 		
 	
-$('.areaSelect').html('');
+$('.show').html('');
 		if(result.length!=0){
 			for(var i=0; i<result.length; i++){
 				var PublicArt_Name = result[i].PublicArt_Name;
 				var PublicArt_Place = result[i].PublicArt_Place;
 				var PublicArt_Image = result[i].PublicArt_Image;
-				$('.areaSelect').append('<ul class = "show"><li><a href="detail.html"><img class = "result_img" src ='+PublicArt_Image+'></a><p id = "line"></p><h2 class = "result_name">'+PublicArt_Name+'</h2><p class = "result_place">地址：'+PublicArt_Place+'</p></li></ul>');
+				$('.show').append('<ul><li><a href="detail.html"><img class = "result_img" src ='+PublicArt_Image+'></a><p id = "line"></p><h2 class = "result_name">'+PublicArt_Name+'</h2><p class = "result_place">地址：'+PublicArt_Place+'</p></li></ul>');
 			}			
 		}else{
-			$('.areaSelect').html('<img class="unfind" src = "images/unfind.png">');
+			$('.show').html('<img class="unfind" src = "images/unfind.png">');
 		}
 	})
 })
@@ -5485,9 +5485,9 @@ document.getElementById('slider').innerHTML = str;
 			$ul = $slides.find('ul'), 
 			_width = $slides.width(), 
 			_left = _width * -1, 
-			_animateSpeed = 400, 
+			_animateSpeed = 600, 
 			// 加入計時器, 輪播時間及控制開關
-			timer, _showSpeed = 3000, _stop = false;
+			timer, _showSpeed = 1500, _stop = false;
 		
 		// 先把最後一個 li 的內容插入到第一個 li 前面
 		// 並設定 $ul 的 left 及 width

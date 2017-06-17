@@ -51,91 +51,63 @@ table {
 body{
 	background-color: #E0E0E0;
 }
+
 .wrap{
-	max-width: 1300px;
 	margin: 0 auto;
+	font-family: 微軟正黑體;
 }
 
 .header{
-	float: left;
-	margin: 0 auto;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	width: 100%;
-	color: 	#0072E3;
+	height: 130px;
+	padding: 10px 17%;
+	background-color: #AAFFEE;
 }
 
 .content{
-	float: left;
-	margin: 0 auto;
-	width: 100%;
+	width: 1200px;
 }
 
-.footer{
-	float: left;
-	width: 100%;
-	border: 1px solid black;
-	margin-top: 50px;
-	background-color: #444444;
-}
-
-.footer p{
-	padding: 15px;
-	font-family: 微軟正黑體;
-	font-size: 18px;
-	text-align: center;
-}
-
-#header li{
-	float: left;
-	padding-left: 30px;
-}
-
-#header h1{
+h1{
 	text-align: center;	
-	font-size: 70px;
-	font-family: 微軟正黑體;
+	font-size: 68px;
 	font-weight: bold;
-	padding-top: 50px;
+	padding-top: 25px;
 	padding-left: 10px;
+	color: 	#007799;
 }
 
-#header img{
-	margin: 0 auto;
-	max-width: 110px;
-	max-height: auto;
-	margin-left: 150px;
-}
-
-select{
-	font-family: 微軟正黑體;
-	font-size: 16px;
-	margin-top: 10px;
-	padding: 8px;
-	padding-left: 25px;
-	padding-right: 25px;
-}
-
-.areaSelect{
-	display: none;
+.header a{
+	display: block;
 	float: left;
-	margin-bottom: 10px;
-	width: 1300px;
+}
+
+.header img{	
+	max-width: 100px;	
+}
+
+form{
+	padding-left: 25%;
+	width: 960px;
 }
 
 #choose{
-	float: left;
-	margin-top: 20px;
+	margin-top: 18px;
 	margin-left: 5px;
 	margin-bottom: 20px;
+	font-size: 20px;
+	color: #007799;
+}
+
+select{
+	font-size: 16px;
+	margin-top: 10px;
+	padding: 8px;
 	padding-left: 20px;
-	font-family: 微軟正黑體;
-	font-size: 18px;
+	padding-right: 20px;
 }
 
 .submit{
-	padding: 8px;
-	font-family: 微軟正黑體;
+	padding: 7px;
 	font-size: 16px;
 }
 
@@ -143,12 +115,12 @@ select{
 	display: none;
 	padding: 8px;
 	margin-left: 5px;
-	font-family: 微軟正黑體;
 	font-size: 16px;
 }
 
 .show ul{
-	margin-left: 10px;
+	margin-top: 50px;
+	padding-left: 260px;
 }
 
 .show li{
@@ -156,25 +128,27 @@ select{
 	margin: 8px;
 	padding: 10px;
 	padding-bottom: 15px;
-	border: 1px solid black;
+	border: 2px solid #007799;
 	text-align: center;
-	width: 280px;
+	width: 250px;
 	height: 300px;	
+	color: #008800;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 #line{
-	border-bottom: 1px solid black;
+	border-bottom: 2px dashed #007799;
 	margin: 10px auto; 
 }
 
 .result_img{
-	max-width: 260px;
-	max-height: 200px;
+	max-width: 250px;
+	height: 200px;
 }
 
 .result_name {
 	font-size: 18px;
-	font-family: 微軟正黑體;
 	text-align: center;	
 	font-weight: bold;
 	margin-bottom: 10px;
@@ -182,16 +156,13 @@ select{
 
 .result_place{
 	font-size: 16px;
-	font-family: 微軟正黑體;
 	text-align: center;
-	text-overflow: ellipsis;
-	overflow: hidden;
 }
 
 .unfind{
 	max-width: 30%;
 	padding-top: 100px;
-	padding-left: 160px;
+	padding-left: 120px;
 }
 
 /*-----------------------------首頁-----------------------------*/
@@ -209,24 +180,23 @@ a img {
 }
 
 .slider-img{
-	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-bottom: 10px;
-	width: 750px;	/* 框架圖片的寬 */
-	height: 400px;	/* 框架圖片的高 */
+	padding-left: 20%;
+	width: 920px;	/* 框架圖片的寬 */
+	height: 410px;	/* 框架圖片的高 */
 	position: relative;
 	float: left;	
 }
 
 .slider-img img{
-	max-width: 80%;
-	max-height: 400px;
-	padding-left: 180px;
+	max-width: 100%;
+	max-height: 410px;	
 }
 
 .slider-img a.prev, .slider-img a.next {
 	position: absolute;
-	top: 173px;
+	top: 150px;
 	display: block;
 	width: 80px;	/* 左右鈕圖片的寬 */
 	height: 50px;	/* 左右鈕圖片的高 */
@@ -236,13 +206,13 @@ a img {
 .slider-img .prev {
 	background: url('images/left.png') no-repeat;
 	background-size:contain;
-	left: 40px;
+	left: 80px;
 }
  
 .slider-img .next {
 	background: url('images/right.png') no-repeat;
 	background-size:contain;
-	right: -15px;
+	right: 10px;
 }
 
 
@@ -250,8 +220,8 @@ a img {
 	overflow: hidden;
 	position: relative;
 	display: block;
-	top: 30px;	
-	width: 720px;	/* 框架中間區塊的寬 */
+	top: 10px;	
+	width: 950px;	/* 框架中間區塊的寬 */
 	height: 100%;	/* 框架中間區塊的高 */
 }
 
@@ -263,7 +233,7 @@ a img {
 
 .slides li {
 	text-align: center;
-	width: 650px;
+	width: 960px;
 	height: 100%;
 	float: left;
 }

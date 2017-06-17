@@ -10,23 +10,14 @@
 <body>
 	<div class="wrap">
 	<div class="header">
-	<ul id="header">		
-		<li><img src="images/高雄市政府logo.png"></li>
-		<li><h1>高 雄 市 公 共 藝 術 資 訊</h1></li>
-	</ul>
+	<a href=""><img src="images/高雄市政府logo.png"></a>
+	<h1>高 雄 市 公 共 藝 術 資 訊</h1>
 	</div>
-
+	<div class="clear"></div>
 	<div class="content">
-	<div class="slider-img">
-	<div class="slides">
-			<ul id="slider"> </ul>
-		<a href="#" class="prev"><img src="images/left.png" alt=""></a>
-		<a href="#" class="next"><img src="images/right.png" alt=""></a>
-    </div>
-    </div>
-	
-	<p id="choose">請選擇要搜尋的區域：</p>
+
 	<form action="post">
+	<label id="choose">請選擇要搜尋的區域：</label>
 	<select id = "area">
  	<option value="null">- - - 選擇地區 - - -</option>
  	<option value="all">- - - 全部地區 - - -</option>
@@ -73,11 +64,16 @@
 	<input type="button" value="回到首頁" class="frontPage" onclick="javascript:location.href='index.html'">
 	</form>
 
-	<div class="areaSelect">
+	<div class="show">
 	</div>
+
+	<div class="slider-img">
+	<div class="slides">
+			<ul id="slider"> </ul>
+		<a href="#" class="prev"><img src="images/left.png" alt=""></a>
+		<a href="#" class="next"><img src="images/right.png" alt=""></a>
     </div>
-    <div class="footer">
-    	<p>This is Footer</p>
+    </div>
     </div>
     </div>
     <script src="all.js"></script>
